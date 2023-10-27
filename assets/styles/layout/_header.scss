@@ -1,0 +1,25 @@
+header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+
+    h1{
+        padding-top: 35vh;
+        font-size: 6em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    .material-symbols-outlined{
+        padding-top: 40px;
+        font-size: 4em;
+        transition: .5s;
+    }
+
+    .material-symbols-outlined:hover{
+        transform: scale(1.5);
+        color:black;
+    }
+}

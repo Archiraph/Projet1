@@ -1,0 +1,48 @@
+@media screen and (max-width: 1624px) {
+    body {
+      background-position: center;
+      background-size: cover;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    header p {
+      font-size: 1em;
+    }
+    header .material-symbols-outlined {
+      font-size: 3em;
+    }
+    
+    nav ul li {
+      padding: 20px;
+    }
+  
+    nav ul:nth-child(2){
+      display: none;
+    }
+  
+    img {
+      height: auto; 
+      width: 100%;
+    }
+  
+    #section1 h1{
+      font-size: 2em;
+    }
+  
+    section{
+      flex-direction: column;
+    }
+  
+    form{
+      flex-direction: column;
+    }
+  
+    form #form_gauche{
+      border-right: 0px;
+    }
+  
+    form #form_gauche #button_form{
+      width: 70%;
+    }
+  }

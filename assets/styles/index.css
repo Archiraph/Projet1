@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather:wght@300&family=Prata&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1, h2, h4, h5, h6, li, button, label, #button_form {
+  font-family: "Inter", sans-serif;
+}
+
+p, h3 {
+  font-family: "Merriweather", serif;
+}
+
+nav {
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.226);
+  bottom: 0;
+}
+nav .first_title_nav {
+  background-color: white;
+  color: black;
+}
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav ul li {
+  padding: 40px;
+}
+nav i {
+  font-size: 1.7em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: black;
+}
+
+nav ul:first-child li:hover {
+  background-color: white;
+  color: black;
+}
+
+nav:hover .first_title_nav {
+  color: white;
+  background-color: inherit;
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+}
+header h1 {
+  padding-top: 35vh;
+  font-size: 6em;
+}
+header p {
+  font-size: 1.2em;
+}
+header .material-symbols-outlined {
+  padding-top: 40px;
+  font-size: 4em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .material-symbols-outlined:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: black;
+}
+
+footer {
+  background-color: white;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#section1 {
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+#section1 h3, #section1 h1, #section1 p {
+  padding-top: 100px;
+}
+#section1 h1 {
+  font-size: 6em;
+}
+#section1 p {
+  font-size: 1.2em;
+  padding-bottom: 100px;
+}
+#section1 img {
+  height: 80vh;
+  width: 80%;
+  padding-bottom: 100px;
+}
+#section1 h3 {
+  position: relative;
+  overflow: hidden;
+}
+#section1 h3::before, #section1 h3::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 70%;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+#section1 h3::before {
+  left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#section1 h3::after {
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 10%;
+}
+#section2 div {
+  padding-bottom: 10vh;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.233);
+  padding-top: 10vh;
+}
+#section2 div * {
+  padding-bottom: 2vh;
+}
+#section2 div h5 {
+  padding-bottom: 3vh;
+}
+#section2 div h3 {
+  line-height: 1.5;
+}
+#section2 div p {
+  text-align: left;
+  width: 80%;
+  margin-left: 8%;
+  line-height: 2;
+}
+#section2 div:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+button {
+  border: 3px solid black;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.3em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: black;
+  color: white;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form div {
+  padding: 5%;
+}
+form #form_gauche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  border-right: 1px solid rgba(0, 0, 0, 0.288);
+}
+form #form_gauche div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form #form_gauche input {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  height: 5vh;
+  border-radius: 5px;
+}
+form #form_gauche label {
+  padding-bottom: 15px;
+  color: rgb(114, 114, 114);
+}
+form #form_gauche textarea {
+  resize: none;
+  height: 20vh;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+}
+form #form_gauche #button_form {
+  color: rgb(70, 70, 70);
+  border: 3px solid rgba(0, 0, 0, 0.452);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 33%;
+  font-size: 2vh;
+  text-align: center;
+}
+form #form_gauche #button_form:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+form #form_droite {
+  width: 50%;
+  display: grid;
+}
+form #form_droite input {
+  border: none;
+  height: 5vh;
+  width: 70%;
+  height: 10vh;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+form #form_droite label {
+  color: rgb(114, 114, 114);
+  padding-right: 30px;
+}
+form #form_droite div {
+  border-bottom: 1px solid black;
+}
+form #form_droite div:nth-child(4) {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form #form_droite ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form #form_droite li {
+  padding-right: 35px;
+}
+
+@media screen and (max-width: 1624px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  header .material-symbols-outlined {
+    font-size: 3em;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  nav ul:nth-child(2) {
+    display: none;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  #section1 h1 {
+    font-size: 2em;
+  }
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form #form_gauche {
+    border-right: 0px;
+  }
+  form #form_gauche #button_form {
+    width: 70%;
+  }
+}/*# sourceMappingURL=index.css.map */
